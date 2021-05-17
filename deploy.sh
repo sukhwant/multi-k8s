@@ -1,6 +1,6 @@
-docker built -t sukhwantprafulli/multi-client:latest -t sukhwantprafulli/multi-client:$SHA -f ./client/Dockerfile ./client
-docker built -t sukhwantprafulli/multi-server:latest -t sukhwantprafulli/multi-server:$SHA -f ./server/Dockerfile ./server
-docker built -t sukhwantprafulli/multi-worker:latest -t sukhwantprafulli/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t sukhwantprafulli/multi-client:latest -t sukhwantprafulli/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t sukhwantprafulli/multi-server:latest -t sukhwantprafulli/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t sukhwantprafulli/multi-worker:latest -t sukhwantprafulli/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 # Push docker
 docker push sukhwantprafulli/multi-client:latest
