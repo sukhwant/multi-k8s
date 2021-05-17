@@ -2,10 +2,12 @@ docker built -t sukhwantprafulli/multi-client:latest -t sukhwantprafulli/multi-c
 docker built -t sukhwantprafulli/multi-server:latest -t sukhwantprafulli/multi-server:$SHA -f ./server/Dockerfile ./server
 docker built -t sukhwantprafulli/multi-worker:latest -t sukhwantprafulli/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
+# Push docker
 docker push sukhwantprafulli/multi-client:latest
 docker push sukhwantprafulli/multi-server:latest
 docker push sukhwantprafulli/multi-worker:latest
 
+# Push docker with SHA tag
 docker push sukhwantprafulli/multi-client:$SHA
 docker push sukhwantprafulli/multi-server:$SHA
 docker push sukhwantprafulli/multi-worker:$SHA
